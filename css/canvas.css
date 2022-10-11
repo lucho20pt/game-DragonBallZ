@@ -17,7 +17,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav
 /* ============================= */
 /* ========= BODY ========= */
 /* ============================= */
-body{ position: relative; width:100%; height:auto; color:#000; font-size:20px; background: #212121; font-family:Arial, Helvetica, sans-serif;}
+body{ position: relative; width:100%; height:auto; color:#000; font-size:20px; background: #212121; font-family:Arial, Helvetica, sans-serif; overflow: hidden;}
 
 
 
@@ -69,5 +69,5 @@ canvas{}
 #score_feedback ol li.odd strong{ padding:0 4px; color:#212121; font-weight:normal; color:#060;}
 #score_feedback ol li.even{ width:30px; color:#900; color:#930; text-align:center; font-weight:bold; font-size:12px;}
 
-footer{ width:100%; height:30px; padding:30px 0; text-align: center;}
+footer{ width:100%; height:20px; padding:10px 0; text-align: center;}
 footer p {color: #ffffff; font-size:14px; }
