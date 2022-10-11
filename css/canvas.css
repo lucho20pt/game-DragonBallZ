@@ -1,0 +1,73 @@
+/* ============================= */
+/* ========= reset css ========= */
+/* ============================= */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent }
+ol, ul {list-style:none;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:''; content:none;}
+:focus {outline:0;}
+ins{text-decoration:none;}
+del{text-decoration:line-through;}
+table{border-collapse:collapse; border-spacing:0;}
+.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width:0px; line-height:0px; font-size:0px;}
+/* ============================= */
+/* ========= HTML5 DISPLAY RULE ========= */
+/* ============================= */
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, section, summary { display:block;}
+/* ============================= */
+/* ========= BODY ========= */
+/* ============================= */
+body{ position: relative; width:100%; height:auto; color:#000; font-size:20px; background: #212121; font-family:Arial, Helvetica, sans-serif;}
+
+
+
+/* ============================= */
+/* ========= CANVAS ========= */
+/* ============================= */
+canvas{}
+/* ============================= */
+/* ========= DBZ ========= */
+/* ============================= */
+#dbzBlock{ position:relative; width:790px; margin:0 auto; border:30px solid black;}
+/* ========= Sound ========= */
+#dbzBlock #sound{ position:absolute; right:5px; bottom:5px; width:30px; height:30px; text-indent:-9000px;}
+#dbzBlock #sound a{ display:block; width:30px; height:30px; background:url(../images/bg_sound.png) no-repeat 0 0;}
+#dbzBlock #sound a.off{ background:url(../images/bg_sound.png) no-repeat 0 -30px;}
+/* ========= Restart ========= */
+#dbzBlock #restart{ display:none; position:absolute; left:36%; bottom:15px; z-index:100;}
+#dbzBlock #restart a{display:block; width:242px; height:32px; padding-top:7px; margin:0 auto; color:#FFF; font-size:24px; line-height:24px; text-align:center; text-decoration:none; background:url(../images/bg_dbz_button.png) no-repeat 0 0;}
+#dbzBlock #restart a:hover{ border-radius:8px; background: #000 url(../images/bg_dbz_button.png) no-repeat 0 0;}
+/* ========= INTRO SCREEN ========= */
+#dbzIntroScreen{ position:absolute; left:0; top:0; width:100%; height:100%; background: url(../images/bg_dbz_intro-screen.png) no-repeat 0 0;}
+/* ========= Generic Text ========= */
+#dbzIntroScreen section h1{ display:block; color:#fff; font-size:30px; line-height:36px; font-weight:normal; text-align:center; margin-bottom:10px;}
+#dbzIntroScreen section p{ display:block; color:#fff; font-size:14px; margin-bottom:15px;}
+#dbzIntroScreen section a{ display:block; width:242px; height:32px; padding-top:7px; margin:0 auto; color:#FFF; font-size:24px; line-height:24px; text-align:center; text-decoration:none; background:url(../images/bg_dbz_button.png) no-repeat 0 0;}
+#dbzIntroScreen section a:hover{ border-radius:8px; background: #000 url(../images/bg_dbz_button.png) no-repeat 0 0;}
+#dbzIntroScreen section .sendButton input{  display:block; width:242px; height:39px; padding-top:0; margin:0 auto; color:#FFF; font-size:24px; line-height:24px; text-align:center; text-decoration:none; border:none; cursor:pointer; background:url(../images/bg_dbz_button.png) no-repeat 0 0;}
+#dbzIntroScreen section .sendButton input:hover{ border-radius:8px; background: #000 url(../images/bg_dbz_button.png) no-repeat 0 0;}
+/* ========= Wellcome ========= */
+#dbzIntroScreen #dbzWellcome{ position:absolute; left:21px; top:42px; width:240px; padding:15px; background:url(../images/bg_black-50.png) repeat 0 0;}
+/* ========= Instructions Game ========= */
+#dbzIntroScreen #dbzIntroctions{ display:none; position:absolute; left:21px; top:42px; width:240px; padding:15px; background:url(../images/bg_black-50.png) repeat 0 0;}
+#dbzIntroScreen #dbzMovement{ display:none; position:absolute; right:49px; top:168px; width:240px; padding:15px; background:url(../images/bg_black-50.png) repeat 0 0;}
+#dbzIntroScreen #dbzMovement img{ display:block;}
+/* ========= Start Game ========= */
+#dbzIntroScreen #dbzInitGame{ display:none; position:absolute; left:21px; top:190px; width:240px; padding:15px; background:url(../images/bg_black-50.png) repeat 0 0;}
+#dbzIntroScreen #dbzInitGame .row{ display:block; width:100%; margin-bottom:20px;}
+#dbzIntroScreen #dbzInitGame .row label{ display:block; width:100%; color:#FFF; font-size:18px;  margin-bottom:8px; color:#eee;}
+#dbzIntroScreen #dbzInitGame .row input{ display:block; width:93%; margin:0 auto; height:20px; font-size:22px; padding:5px; background:none; border:1px solid #eee; color:yellow; text-align:center;}
+
+#preTimer{ position:absolute; left:49%; top:40%; color:orange; font-size: 64px; font-family:"Arial Black", Gadget, sans-serif;}
+#preTimer span{ display:block; color:green; margin-left:-33px;}
+
+/* ========= Score List ========= */
+#score_feedback{ height: 445px; right: -171px; overflow: auto; position: absolute; top: 0; width:171px;}
+#score_feedback ol{ display:block;}
+#score_feedback ol li{ font-size:11px; float:left; display:block; border-bottom:1px solid #ccc; height:24px; padding-top:5px; border-left:1px solid #ccc;}
+#score_feedback ol li.odd{ width:92px; display: list-item; list-style-type:decimal; margin-left:28px; color:#141414; background:#f9f9f9;}
+#score_feedback ol li.odd strong{ padding:0 4px; color:#212121; font-weight:normal; color:#060;}
+#score_feedback ol li.even{ width:30px; color:#900; color:#930; text-align:center; font-weight:bold; font-size:12px;}
+
+footer{ width:100%; height:30px; padding:30px 0; text-align: center;}
+footer p {color: #ffffff; font-size:14px; }

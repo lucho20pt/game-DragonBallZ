@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DBZ the Catch Game</title>
+    <meta name="description" content="DBZ | DragonBall Z" />
+    <meta name="author" content="Daniel Batista" />
+    <meta
+      name="keywords"
+      content="canvas, html5, javascript, jquery, PHP"
+    />
+    <!-- ****************************************************** -->
+    <!-- ****************  CSS CALL  ************************** -->
+    <!-- ****************************************************** -->
+    <link href="css/canvas.css" rel="stylesheet" type="text/css" />
+    <!-- ****************************************************** -->
+    <!-- ************  JAVASCRIPT CALL  *********************** -->
+    <!-- ****************************************************** -->
+    <!-- <script
+      type="text/javascript"
+      src="js/add-ins/jquery-1.8.2.min.js"
+    ></script> -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Validation-Engine/2.6.4/jquery-1.8.2.min.js"
+    ></script>
+    <script type="text/javascript" src="js/core/dbz.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="js/add-ins/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="dbzBlock">
+      <!-- Canvas -->
+      <canvas id="dbz" width="790" height="445">
+        <audio id="audioInGame" controls="controls">
+          <source src="sound/dbz_battle-theme.ogg" type="audio/ogg" />
+          <source src="sound/dbz_battle-theme.mp3" type="audio/mp3" />
+        </audio>
+        <audio id="audioTeleport" controls="controls">
+          <source src="sound/dbz_teleport.ogg" type="audio/ogg" />
+          <source src="sound/dbz_teleport.mp3" type="audio/mp3" />
+        </audio>
+        <audio id="audioPunch" controls="controls">
+          <source src="sound/dbz_punch.ogg" type="audio/ogg" />
+          <source src="sound/dbz_punch.mp3" type="audio/mp3" />
+        </audio>
+        Your browser does not support Canvas
+      </canvas>
+      <!-- /Canvas -->
+
+      <!-- Sound Button -->
+      <div id="sound">
+        <a href="#">Sound</a>
+      </div>
+      <!-- /Sound Button -->
+
+      <!-- Rstart Button -->
+      <div id="restart">
+        <a href="#">Play Again</a>
+      </div>
+      <!-- /Restart Button -->
+
+      <!-- Intro Screen -->
+      <div id="dbzIntroScreen">
+        <section id="dbzWellcome">
+          <h1>Welcome</h1>
+          <p>
+            The DBZ Catch Game is an unofficial and non-profit game that was
+            made by a DBZ fan created by Daniel Batista to learn and test the
+            new potential of creating games with html5.
+          </p>
+          <p>
+            The Game is made with html5 using the canvas tag with a lot of
+            javascript and jquery implemented.
+          </p>
+          <p>
+            The game was developed in 2013 <br />
+            It a is very simple game and is still evolving as I have spare time
+            to work
+          </p>
+          <a href="#">Continue</a>
+        </section>
+
+        <section id="dbzIntroctions">
+          <h1>How to Play</h1>
+          <p>This game is to catch up on the hero catching the villain</p>
+          <p></p>
+          <p>When harvesting the villain you won a point.</p>
+          <p>
+            The difficulty is increased when it takes some time to catch the
+            villain, this disappears and pops up somewhere else.
+          </p>
+          <p>
+            When the clock gets to 0, the game is over and your score will be
+            saved.
+          </p>
+          <p>You can zoom in (Ctrl +) or zoom out (Ctrl -) to increase the canvas size</p>
+          
+          <a href="#">Continue</a>
+        </section>
+
+        <section id="dbzMovement">
+          <h1>Hero Movement</h1>
+          
+          <img
+            src="images/img_dbz-controls.png"
+            width="246"
+            height="145"
+            alt="Controls"
+          />
+          
+        </section>
+
+        <section id="dbzInitGame">
+          <h1>Player Profile</h1>
+          <form id="formID" method="post">
+            <div class="row">
+              <label for="nickName">*Nick Name</label>
+              <input
+                id="nickName"
+                name="nickName"
+                type="text"
+                maxlength="14"
+                value=""
+              />
+            </div>
+            <div class="sendButton">
+              <input
+                id="playerSave"
+                name="playerSave"
+                type="submit"
+                class="submit"
+                value="Start your Game"
+              />
+            </div>
+          </form>
+        </section>
+      </div>
+      <!-- /Intro Screen -->
+
+      <!-- Score List -->
+      <aside id="score_feedback"></aside>
+      <!-- /Score List -->
+    </div>
+    <footer><p>Daniel Batista @2013</p></footer>
+  </body>
+</html>
